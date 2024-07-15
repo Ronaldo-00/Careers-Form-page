@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.hero{
+    width: 100%;
+    height: auto;
+    background-color: #1d2127;
+    font-family: sans-serif;
+}
+.banner{
+    width: 85%;
+    height: auto;
+    margin: auto;
+}
+nav{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    position: relative;
+}
+.logo{
+    width: 60px;
+}
+.logo img{
+    width: 100%;
+}
+.navlinks ul{
+    display: flex;
+}
+.navlinks ul li{
+    list-style: none;
+}
+.navlinks ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    padding-left: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.op-cl{
+    display: none;
+    right: 0;
+    position: absolute;
+    cursor: pointer;
+}
+/* Form Container */
+.form-container{
+    width: 50%;
+    padding: 6px 0;
+}
+.header{
+    padding: 15px 0;
+}
+.header h1{
+    color: #fff;
+}
+.form{
+    padding: 10px 0 15px 0;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+.input-grp{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0;
+}
+label{
+    color: #777777;
+    font-size: 13px;
+    padding: 5px 0;
+}
+input,select{
+    background-color: #282d36;
+    color: #fff;
+    border: none;
+    outline: none;
+    width: 100%;
+    min-width: 270px;
+    padding: 8px 14px;
+    font-size: 14px;
+}
+.files{
+    padding:  0;
+    background-color: transparent;
+}
+textarea{
+    background-color: #282d36;
+    color: #fff;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 8px 14px;
+    height: 140px;
+}
+.btn-1{
+    padding: 15px 0;
+    align-items: center;
+}
+button{
+    background-color: #d93634;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width:1300px){
+    input{
+        min-width: 200px;
+    }
+}
+@media (max-width:1000px){
+    .op-cl{
+        display: block;
+    }
+    .form-container{
+        width: 100%;
+    }
+    .input-grp{
+        flex-direction: column;
+    }
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navlinks{
+        width: 100%;
+        display: none;
+    }
+    .links{
+        display: block;
+    }
+    .navlinks ul{
+        flex-direction: column;
+    }
+    .navlinks ul li {
+        padding: 10px 0;
+        border-top: 1px solid  #fff;
+    }
+    .navlinks ul li:nth-child(1){
+        border-top: none;
+    }
+    .navlinks ul li a{
+        padding-left: 0;
+        color: #d93634;
+    }
+}
